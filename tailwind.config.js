@@ -14,7 +14,7 @@ module.exports = {
         softRed : "hsl(5, 85%, 63%)"
       }, gridTemplateColumns : {
         "16":"0.6fr 1fr",
-        "18" : "1fr 0.4fr"
+        "18" : "1fr 0.5fr"
       }
     },
   },

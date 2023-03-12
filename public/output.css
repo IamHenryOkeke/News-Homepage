@@ -515,6 +515,26 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.bottom-\[0\]{
+  bottom: 0;
+}
+
+.top-\[0\]{
+  top: 0;
+}
+
 .m-0{
   margin: 0px;
 }
@@ -540,8 +560,12 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .box-border{
@@ -572,12 +596,12 @@ video {
   grid-template-columns: 0.6fr 1fr;
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-18{
+  grid-template-columns: 1fr 0.5fr;
 }
 
-.grid-cols-18{
-  grid-template-columns: 1fr 0.4fr;
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -600,8 +624,8 @@ video {
   gap: 0.25rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
+.gap-10{
+  gap: 2.5rem;
 }
 
 .gap-5{
@@ -614,10 +638,6 @@ video {
 
 .gap-7{
   gap: 1.75rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .self-start{
@@ -636,6 +656,11 @@ video {
 .bg-softRed{
   --tw-bg-opacity: 1;
   background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
+}
+
+.bg-slate-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .p-5{
@@ -664,6 +689,10 @@ video {
 
 .pb-7{
   padding-bottom: 1.75rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-body{
@@ -698,11 +727,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -726,12 +750,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:bg-blue-950:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
+}
+
 .hover\:text-softRed:hover{
   --tw-text-opacity: 1;
   color: hsl(5 85% 63% / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
+  .md\:mb-24{
+    margin-bottom: 6rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -748,36 +781,20 @@ video {
     display: none;
   }
 
-  .md\:grid-cols-18{
-    grid-template-columns: 1fr 0.4fr;
-  }
-
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:gap-10{
-    gap: 2.5rem;
   }
 
   .md\:gap-20{
     gap: 5rem;
   }
 
-  .md\:gap-2{
-    gap: 0.5rem;
-  }
-
-  .md\:gap-36{
-    gap: 9rem;
-  }
-
-  .md\:gap-28{
-    gap: 7rem;
-  }
-
   .md\:px-\[150px\]{
     padding-left: 150px;
     padding-right: 150px;
+  }
+
+  .md\:font-bold{
+    font-weight: 700;
   }
 }
